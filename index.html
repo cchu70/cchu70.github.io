@@ -18,60 +18,126 @@
 
     <!-- Custom styles for this template -->
 
+    <!-- Scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
   </head>
 
   <body id="page-top">
-    <ul>
-        <li><a href="#about_section">About</a></li>
-        <li><a href="#projects_section">Projects and Experience</a></li>
-        <li><a href="#contact_section">Contact</a></li>
+    <ul id="nav_bar">
+        <li class="nav_bar_option"><a href="#about_section" class="nav_bar_text">About</a></li>
+
+        <li class="nav_bar_option"><a href="#projects_section" class="nav_bar_text">Projects and Experience</a></li>
+
+        <li class="nav_bar_option"><a href="#contact_section" class="nav_bar_text">Contact</a></li>
     </ul>
 
     <section id="start_section" class="info_section">
-        <div class="image-txt-container">
+        <div class="image_txt_container">
             <div>
                 <h1 style="font-size: 5vw;">Hi! My name is</h1>
                 <h2 style="font-size: 8vw">Claudia Chu</h2>
             </div>
 
-            <img src="img/personal_website_portrait.png" id="portrait">
+            <img src="img/portrait.png" id="portrait">
         </div>
     </section>
 
-    <section id="about_section" class="info_section">
-        <div>
-            <h1 class="info_section_heading">About Claudia</h1>
-            <div id="about_blocks_container">
-                <div class="about_block" id="career_interest_block">
-                    <h1 class="about_block_header">Career Interests</h1>
-                    <p class="about_block_content">Bioinformatics, design, stuff, stuff, stuff</p>
-                </div>
-                <div class="about_block" id="activities_block">
-                    <h1 class="about_block_header">Activities</h1>
-                    <p class="about_block_content">HackGT Operations team</p>
-                </div>
-                <div class="about_block" id="hobbies_block">
-                    <h1 class="about_block_header">Hobbies</h1>
-                    <p class="about_block_content">drawing, knitting, crochet, volleyball, piano, clarinet, running, longboarding, baking</p>
+    <div id="wrapper">
+        <section id="about_section">
+            <div class="content">
+                <h1 class="info_section_heading">About Claudia</h1>
+                <div id="about_blocks_container">
+                    <div class="about_block" id="career_interest_block">
+                        <h1 class="about_block_header">Career Interests</h1>
+                        <p class="about_block_content">Bioinformatics, design, Major and Minor</p>
+                    </div>
+                    <div class="about_block" id="activities_block">
+                        <h1 class="about_block_header">Activities</h1>
+                        <p class="about_block_content">HackGT Operations team, small ensemble</p>
+                    </div>
+                    <div class="about_block" id="hobbies_block">
+                        <h1 class="about_block_header">Hobbies</h1>
+                        <p class="about_block_content">drawing, knitting, crochet, volleyball, piano, clarinet, running, longboarding, baking</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div id="projects_section" class="info_section">
-            <h1 class="info_section_heading">Projects and Experience</h1>
-            <!-- Have a list of experience, on left, and on right have a description box and picture. Need javascript to handle button clicks. Then need a bunch of sections to display -->
-        </div>
-    </section>
+        <section id="projects_section">
+            <div class="content">
+                <h1 class="info_section_heading">Projects and Experience</h1>
+                <!-- Have a list of experience, on left, and on right have a description box and picture. Need javascript to handle button clicks. Then need a bunch of sections to display -->
+            </div>
+        </section>
 
 
-    <section>
-        <div id="contact_section" class="info_section">
-            <h1 class="info_section_heading">Contact</h1>
-            <!-- Social media links -->
-        </div>
-    </section>
+        <section id="contact_section">
+            <div class="content">
+                <h1 class="info_section_heading">Contact</h1>
+                <!-- Social media links -->
+                <div id="contact_section_info">
+
+                    <div id="general_contact_info" class="block">
+                        <div>
+                            <p id="phone_number">(256)617-8564</p>
+                            <p id="email">claudiachu99@gmail.com</p>
+                        </div>
+                        <div id="addresses">
+                             <p>335204 Georgia Tech Station<br>Atlanta, GA 30332-140</p>
+                            <p>123 Drury Lane<br>Huntsville, AL 35758</p>
+                        </div>
+                    </div>
+
+                    <div id="social_media" class="block">
+                        <div class="image_txt_container">
+                            <img src="img/linkedin.png">
+                            <a href="https://www.linkedin.com/in/claudia-chu-aa5280145/" target="_blank" >Claudia Chu</a>
+                        </div>
+                        <div class="image_txt_container">
+                            <img src="img/facebook.png">
+                            <a href="https://www.facebook.com/profile.php?id=100016677999663" target="_blank" >Claudia Chu</a>
+                        </div>
+                        <div class="image_txt_container" class="block">
+                            <img src="img/instagram.png">
+                            <a href="https://www.instagram.com/uhcaidualc/?hl=en" target="_blank" >uhcaidualc</a>
+                        </div>
+                        <div class="image_txt_container">
+                            <img src="img/snapcode.png">
+                            <a href="img/snapcode.png" target="_blank" >uhcaidualc</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
 
 
   </body>
