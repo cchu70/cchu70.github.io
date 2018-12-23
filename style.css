@@ -33,6 +33,9 @@ body {
   background-color: #333; /* Change the link color to gray on hover */
 }
 
+.nav_bar_option .nav_bar_text:focus {
+  background-color: #EC7063;
+}
 
 
 /*Sections*/
@@ -48,15 +51,15 @@ body {
 }
 
 section {
-    width: 100%;
+    width: 100vw;
     height: 100vh; /* fills height */
     padding: 30px; /*so nav doesnt cover headings when navigating*/
-    overflow:hidden;
+    /*overflow:hidden;*/
+    justify-content: center; /* centers whole section*/
 }
 
 .image_txt_container {
   display:flex;
-  /*align-items:center;*/
   justify-content: center; /* centers whole section*/
 }
 
@@ -73,14 +76,14 @@ section {
 }
 
 #start_section {
-/*    margin-top: 50px;*/
-    background-color: #FFB6C1;
+    margin-top: 50px;
+    background-color: #EBF5FB; /*light blue*/
 }
 
 /*About section*/
 
 #about_section {
-  background-color: #FFA07A;
+  background-color: #F4ECF7; /*light purple*/
 }
 
 #about_blocks_container {
@@ -92,18 +95,18 @@ section {
 .about_block {
   width: 33.33%;
   text-align: center;
-  background-color: black;
+  background-color: #A569BD; /*dark purple*/
   margin: 10px;
   padding: 10px;
   color: white;
 }
 
 #projects_section {
-  background-color: #E0FFFF;
+  background-color: #FDEDEC; /*pinkish*/
 }
 
 #contact_section {
-  background-color: #98FB98;
+  background-color: #FEF9E7; /*light yellow*/
 }
 
 #contact_section_info {
