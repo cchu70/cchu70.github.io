@@ -99,17 +99,31 @@
                 <!-- Have a list of experience, on left, and on right have a description box and picture. Need javascript to handle button clicks. Then need a bunch of sections to display -->
                 <div id="projects_selection_panel">
                     <div id="project_buttons">
-                        <button>Bioinformatics Research Intern</button>
-                        <button>Huntsville Botanical Gardens</button>
-                        <button>Seed Share</button>
-                        <button>Humor Genome Project</button>
-                        <button>Research</button>
+                        <button class="a_project_button" id="bioinformatics" onclick="openDescription(this)">Bioinformatics Research Intern</button>
+                        <button class="a_project_button" id="gardenGuide" onclick="openDescription(this)">Huntsville Botanical Gardens Guide</button>
+                        <button class="a_project_button" id="seedShare" onclick="openDescription(this)">Seed Share</button>
+                        <button class="a_project_button" id="humorGenome" onclick="openDescription(this)">Humor Genome Project</button>
+                        <button class="a_project_button" id="research" onclick="openDescription(this)">Research</button>
                     </div>
-                    <div class="projects_descriptions">
-                        <p id="bioinformatics_description">Stuff about bioinformatics</p>
+                    <div class="projects_description_box">
+                        <p id="bioinformatics_description" class="a_project_description">Stuff about bioinformatics</p>
+                        <p id="gardenGuide_description" class="a_project_description">Stuff about Garden Guide</p>
+                        <p id="seedShare_description" class="a_project_description">Stuff about seedShare</p>
+
+                        <p id="humorGenome_description" class="a_project_description">Stuff about Humor Genome</p>
+                        <p id="research_description" class="a_project_description">Stuff about Research</p>
                     </div>
                     <!-- <img src="img/about_me.png"> -->
                 </div>
+                <script type="text/javascript">
+                    function openDescription(button) {
+                        var descriptions = document.getElementsByClassName("a_project_description");
+                        for (i = 0; i < descriptions.length; i++) {
+                            descriptions[i].style.visibility = "hidden";
+                        }
+                        document.getElementById(button.id + "_description").style.visibility = "visible";
+                    }
+                </script>
 
 
             </div>

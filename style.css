@@ -127,8 +127,9 @@ section {
   display: flex;
 }
 
-#projects_selection_panel .project_descriptions {
-  display: inline-block;
+#projects_selection_panel .projects_description_box p {
+  position: absolute;
+  visibility: hidden;
   width: 60vw;
   height: 100%;
 }
@@ -155,17 +156,10 @@ section {
 #project_buttons button:focus {
   background-color: black;
   color: white;
-  /*border: 2px solid white;*/
   outline:0;
 }
 
-#projects_descriptions {
-  display: hidden;
-}
 
-#projects_section img {
-  float: right;
-}
 
 /*contact section*/
 
