@@ -55,6 +55,8 @@
 
         <li class="nav_bar_option"><a href="#projects_section" class="nav_bar_text">Projects and Experience</a></li>
 
+        <li class="nav_bar_option"><a href="#activities_section" class="nav_bar_text">Activities</a></li>
+
         <li class="nav_bar_option"><a href="#contact_section" class="nav_bar_text">Contact</a></li>
 
     </ul>
@@ -75,19 +77,29 @@
     <div id="wrapper">
         <section id="about_section">
             <div class="content">
-                <h1 class="info_section_heading">About Claudia</h1>
+                <h1 class="info_section_heading">About</h1>
                 <div id="about_blocks_container">
-                    <div class="about_block" id="career_interest_block">
-                        <h1 class="about_block_header">Career Interests</h1>
-                        <p class="about_block_content">Bioinformatics, design, Major and Minor</p>
+                    <div class="about_block" id="about_intro_block">
+                        <p>Hi! My name is Claudia Chu, and I am a native of Madison, Alabama. I am majoring Computer Science and minoring in Biology at the Georgia Institute of Technology in Atlanta, Georgia. My hope is to take what I learn from my coursework and make an impact, whether it be developing algorithms for computational biology, automating pipelines, or applying new machine learning techniques to solve novel and ongoing questions.<br></p>
                     </div>
-                    <div class="about_block" id="activities_block">
-                        <h1 class="about_block_header">Activities</h1>
-                        <p class="about_block_content">HackGT Operations team, small ensemble</p>
-                    </div>
-                    <div class="about_block" id="hobbies_block">
-                        <h1 class="about_block_header">Hobbies</h1>
-                        <p class="about_block_content">drawing, knitting, crochet, volleyball, piano, clarinet, running, longboarding, baking</p>
+                    <div class="about_block" id="academics_block">
+                        <h1 class="about_block_header">Academics</h1>
+                        <div class="about_block_content">
+                            <p>Current [change to blocks with GPA, coursework, major, minor, etc.]</p>
+                            <ul>
+                                <li>Computer Organization and Programming</li>
+                                <li>Statistics</li>
+                                <li>Introduction to Algorithms</li>
+                                <li>Bioinformatics Algorithm Research (stringMLST)</li>
+                                <li>Vertically Integrate Project – Humor Genome Project</li>
+                            </ul>
+                            <p>Completed</p>
+                            <ul>
+                                <li>MATLAB</li>
+                                <li>Data Structures and Algorithms (Java)</li>
+                                <li>Combinatorics</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,23 +109,56 @@
             <div class="content">
                 <h1 class="info_section_heading">Projects and Experience</h1>
                 <!-- Have a list of experience, on left, and on right have a description box and picture. Need javascript to handle button clicks. Then need a bunch of sections to display -->
-                <div id="projects_selection_panel">
-                    <div id="project_buttons">
+                <div class="selection_panel" id="projects_selection_panel">
+                    <div class="selection_panel_button" id="project_buttons">
                         <button class="a_project_button" id="bioinformatics" onclick="openDescription(this)">Bioinformatics Research Intern</button>
                         <button class="a_project_button" id="gardenGuide" onclick="openDescription(this)">Huntsville Botanical Gardens Guide</button>
-                        <button class="a_project_button" id="seedShare" onclick="openDescription(this)">Seed Share</button>
-                        <button class="a_project_button" id="humorGenome" onclick="openDescription(this)">Humor Genome Project</button>
-                        <button class="a_project_button" id="research" onclick="openDescription(this)">Research</button>
+                        <button class="a_project_button" id="humorGenome" onclick="openDescription(this)">Comedian Identifier Team Leader</button>
+                        <button class="a_project_button" id="seedShare" onclick="openDescription(this)">Seed Share Hackathon Project</button>
+                        <button class="a_project_button" id="research" onclick="openDescription(this)">Undergrad Bioinformatics Research</button>
                     </div>
                     <div class="projects_description_box">
-                        <p id="bioinformatics_description" class="a_project_description">Stuff about bioinformatics</p>
-                        <p id="gardenGuide_description" class="a_project_description">Stuff about Garden Guide</p>
-                        <p id="seedShare_description" class="a_project_description">Stuff about seedShare</p>
+                        <div id="bioinformatics_description" class="a_project_description">
+                            <p>HudsonAlpha Genome Sequencing Center, Huntsville, AL<br>May-July 2018</p>
+                            <ul>
+                                <li>Developed automated bioinformatics pipeline that assembles, classifies, and screens contaminants from Illumina libraries from plant samples</li>
+                                <li>Utilized Python, AWK and cluster computing to speed up processing time, managing queuing systems, controlling file sizes (up to 1 Terabyte per file)</li>
+                                <li>Collaborated with bioinformatics team to implement analysis of Illumina Libraries</li>
+                                <li>Presented pipeline and results at poster session to HudsonAlpha employees</li>
+                            </ul>
+                        </div>
+                        <div id="gardenGuide_description" class="a_project_description">
+                            <p>Huntsville Botanical Gardens, Huntsville, AL<br>July 2017 – January 2018</p>
+                            <ul>
+                                <li>Develop program to connect the public to local scientists’ work</li>
+                                <li>Teaching Assistant at children’s summer programs</li>
+                                <li>Volunteered over 150 hours (June 2012 – July 2017)</li>
+                            </ul>
+                        </div>
+                        <div id="seedShare_description" class="a_project_description">
+                            <p>VandyHacks, Nashville, TN<br>October 2018</p>
+                            <ul>
+                                <li>Designed Web App to aggregate online delivery orders from the same restaurants</li>
+                                <li>Developed front end HTML and CSS styling of Web App</li>
+                            </ul>
+                        </div>
 
-                        <p id="humorGenome_description" class="a_project_description">Stuff about Humor Genome</p>
-                        <p id="research_description" class="a_project_description">Stuff about Research</p>
+                        <div id="humorGenome_description" class="a_project_description">
+                            <p>Humor Genome Project: Comedian Identifier<br>September 2018 – Present</p>
+                            <ul>
+                                <li>Develop a machine learning model to identify who said a joke</li>
+                                <li>Test accuracy of using different text features and combinations</li>
+                                <li>Using python and YouTube API to scrape video transcripts for learning data sets</li>
+                            </ul>
+                        </div>
+                        <div id="research_description" class="a_project_description">
+                            <p>King Jordan Lab, Georgia Institute of Technology, Atlanta, GA<br>January 2019 - Present</p>
+                            <ul>
+                                <li>Developing kmer based bacterial identification algorithm stringMLST</li>
+                                <li>Optimizing stringMLST algorithm</li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- <img src="img/about_me.png"> -->
                 </div>
                 <script type="text/javascript">
                     function openDescription(button) {
@@ -129,11 +174,23 @@
             </div>
         </section>
 
+        <section id="activities_section">
+            <div class="content">
+                <h1 class="info_section_heading">Activities</h1>
+                <div class="activity_block">
+                    <div class="image_txt_container">
+                        <img src="img/HackGTLogo.png" style="height: 10vh;">
+                        <a href="https://hack.gt/" target="_blank">HackGT Operations Team</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
 
         <section id="contact_section">
             <div class="content">
                 <h1 class="info_section_heading">Contact</h1>
-                <!-- Social media links -->
                 <div id="contact_section_info">
 
                     <div id="general_contact_info" class="block">
@@ -169,14 +226,6 @@
             </div>
         </section>
     </div>
-
-    <!-- SCRIPTS -->
-    <script type="text/javascript">
-        var div = document.getElementByClassName('nav_bar_text')
-    </script>
-
-
-
   </body>
 
 </html>

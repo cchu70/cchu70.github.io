@@ -14,6 +14,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 .nav_bar_option {
@@ -51,11 +52,20 @@ section {
     padding-top: 30px; /*so nav doesnt cover headings when navigating*/
     overflow:hidden;
     justify-content: center; /* centers whole section*/
+    z-index: 2;
+}
+
+.content {
+  padding: 30px;
 }
 
 .image_txt_container {
   display:flex;
   justify-content: center; /* centers whole section*/
+}
+
+.image_txt_container a {
+  padding: 10px;
 }
 
 /*.content {
@@ -73,6 +83,7 @@ section {
 #start_section {
     color: white;
     background-color: #85C1E9; /*pink*/
+    padding-top: 60px;
 }
 
 #name {
@@ -108,18 +119,32 @@ section {
 }
 
 .about_block {
-  width: 33.33%;
-  text-align: center;
+  width: 50%;
+  /*text-align: center;*/
   /*background-color: #FFD3C6;*/
-  border: 2px solid black;
+  /*border: 2px solid black;*/
+  /*border-color: white;*/
   margin: 10px;
   padding: 10px;
+
   /*color: #FFD3C6;*/
+}
+
+#about_intro_block {
+
+}
+#academics_block {
+  color: white;
+  background-color: #85C1E9;
+}
+
+.about_block .about_block_header {
+  text-align: center;
 }
 
 /*project section*/
 #projects_section {
-  background-color: #85C1E9; /*pinkish*/
+  background-color: #85C1E9;
   color: white;
 }
 
@@ -127,11 +152,12 @@ section {
   display: flex;
 }
 
-#projects_selection_panel .projects_description_box p {
+#projects_selection_panel .projects_description_box .a_project_description {
   position: absolute;
   visibility: hidden;
-  width: 60vw;
+  /*width: 60vw;*/
   height: 100%;
+  /*z-index: inherit;*/
 }
 
 #project_buttons {
@@ -156,15 +182,15 @@ section {
 #project_buttons button:focus {
   background-color: black;
   color: white;
-  outline:0;
+  outline: 0;
 }
 
-
-
+/*activities*/
 /*contact section*/
 
 #contact_section {
-  /*background-color: #FEF9E7; /*light yellow*/*/
+  background-color: #85C1E9;
+  color: white;
 }
 
 #contact_section_info {
