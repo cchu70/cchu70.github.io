@@ -48,7 +48,7 @@ body {
 
 section {
     width: 100vw;
-    height: 100vh;  /*fills height*/
+    min-height: 100vh;  /*fills height*/
     padding-top: 30px; /*so nav doesnt cover headings when navigating*/
     overflow:hidden;
     justify-content: center; /* centers whole section*/
@@ -56,7 +56,7 @@ section {
 }
 
 .content {
-  padding: 30px;
+  padding: 50px;
 }
 
 .image_txt_container {
@@ -67,10 +67,6 @@ section {
 .image_txt_container a {
   padding: 10px;
 }
-
-/*.content {
-  padding: 30px;
-}*/
 
 /*Start section*/
 
@@ -112,40 +108,26 @@ section {
   /*background-color: #F4ECF7; /*light purple*/*/
 }
 
-#about_blocks_container {
-  height: 100%;
-  width: 100%;
+#about_paragraph {
+  padding-right: 100px;
+  padding-left: 100px;
   display: flex;
-}
-
-.about_block {
-  width: 50%;
-  /*text-align: center;*/
-  /*background-color: #FFD3C6;*/
-  /*border: 2px solid black;*/
-  /*border-color: white;*/
-  margin: 10px;
-  padding: 10px;
-
-  /*color: #FFD3C6;*/
-}
-
-#about_intro_block {
-
-}
-#academics_block {
-  color: white;
-  background-color: #85C1E9;
-}
-
-.about_block .about_block_header {
   text-align: center;
 }
 
-/*project section*/
-#projects_section {
+/*skills section*/
+
+#skills_section {
   background-color: #85C1E9;
   color: white;
+}
+
+
+
+/*project section*/
+#projects_section {
+  background-color: white;
+  color: black;
 }
 
 #projects_selection_panel {
@@ -158,6 +140,7 @@ section {
   /*width: 60vw;*/
   height: 100%;
   /*z-index: inherit;*/
+  color: black;
 }
 
 #project_buttons {
@@ -186,11 +169,15 @@ section {
 }
 
 /*activities*/
+#activities_section {
+  background-color: #85C1E9;
+  color: white;
+}
 /*contact section*/
 
 #contact_section {
-  background-color: #85C1E9;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 #contact_section_info {
