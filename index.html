@@ -54,7 +54,7 @@
 
         <li class="nav_bar_option"><a href="#about_section" class="nav_bar_text">About</a></li>
 
-        <li class="nav_bar_option"><a href="#skills_section" class="nav_bar_text">Skills</a></li>
+        <li class="nav_bar_option"><a href="#abilities_section" class="nav_bar_text">Abilities</a></li>
 
         <li class="nav_bar_option"><a href="#projects_section" class="nav_bar_text">Projects and Experience</a></li>
 
@@ -69,7 +69,7 @@
                 <h1 style="font-size: 5vw;">Hi! My name is</h1>
                 <h2 id="name">Claudia Chu</h2>
                 <div id="updates_block">
-                    <p>12/22/2018:<br>Happy Holidays!</p>
+                    <p>1/7/2018:<br>Happy New Year!</p>
                 </div>
             </div>
             <img src="img/portrait.png" id="portrait">
@@ -81,15 +81,38 @@
             <div class="content">
                 <h1 class="info_section_heading">About</h1>
                 <div id="about_paragraph">
-                    <p>Hi! My name is Claudia Chu, and I am a native of Madison, Alabama. I am majoring Computer Science and minoring in Biology at the Georgia Institute of Technology in Atlanta, Georgia. My hope is to take what I learn from my coursework and make an impact, whether it be developing algorithms for computational biology, automating pipelines, or applying new machine learning techniques to solve novel and ongoing questions.<br></p>
+                    <p>Hi there! I am a native of Madison, Alabama. I am majoring Computer Science and minoring in Biology at the Georgia Institute of Technology in Atlanta, Georgia. My hope is to take what I learn from my coursework and make an impact, whether it be developing algorithms for computational biology, automating pipelines, or applying new machine learning techniques to solve novel and ongoing problems.<br></p>
+                    <p style="text-align: right;">~ Claudia Chu</p>
                 </div>
+
+
             </div>
         </section>
 
-        <section id="skills_section">
+        <section id="abilities_section">
             <div class="content">
-                <h1 class="info_section_heading">Skills</h1>
-                <p>none :(</p>
+                <h1 class="info_section_heading">Abilities</h1>
+                <div id="abilities_blocks">
+                    <div class="block">
+                        <p>Courses Completed</p>
+                        <ul style="list-style-type:none; padding-left: 0;">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Combinatorics</li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <p>Programming Languages</p>
+                        <ul style="list-style-type:none; padding-left: 0;">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>MATLAB</li>
+                            <li>HTML/CSS</li>
+                            <li>R</li>
+                        </ul>
+                    </div>
+                </div>
+
+
             </div>
         </section>
 
@@ -104,8 +127,9 @@
                         <button class="a_project_button" id="humorGenome" onclick="openDescription(this)">Comedian Identifier Team Leader</button>
                         <button class="a_project_button" id="seedShare" onclick="openDescription(this)">Seed Share Hackathon Project</button>
                         <button class="a_project_button" id="research" onclick="openDescription(this)">Undergrad Bioinformatics Research</button>
+
                     </div>
-                    <div class="projects_description_box">
+                    <div id="projects_description_box">
                         <div id="bioinformatics_description" class="a_project_description">
                             <p>HudsonAlpha Genome Sequencing Center, Huntsville, AL<br>May-July 2018</p>
                             <ul>
@@ -155,6 +179,7 @@
                             descriptions[i].style.visibility = "hidden";
                         }
                         document.getElementById(button.id + "_description").style.visibility = "visible";
+
                     }
                 </script>
 
@@ -165,10 +190,16 @@
         <section id="activities_section">
             <div class="content">
                 <h1 class="info_section_heading">Activities</h1>
-                <div class="activity_block">
-                    <div class="image_txt_container">
-                        <img src="img/HackGTLogo.png" style="height: 10vh;">
-                        <a href="https://hack.gt/" target="_blank">HackGT Operations Team</a>
+                <div id="activity_blocks_container">
+                    <div class="activity_block">
+                        <a href="https://hack.gt/" target="_blank"><img src="img/HackGTLogo.png" style="height: 20vh;"></a>
+                        <h1>HackGT Operations Team</h1>
+                        <p>January 2018 - Present</p>
+                    </div>
+                    <div class="activity_block">
+                        <a href="https://chinacaregt.wixsite.com/home" target="_blank"><img src="img/ChinaCareLogo.png" style="height: 20vh;"></a>
+                        <h1>China Care Design Chair</h1>
+                        <p>May 2018 - December 2018</p>
                     </div>
                 </div>
 
